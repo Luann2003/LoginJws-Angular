@@ -1,0 +1,7 @@
+<form [formGroup]="loginForm">
+    <label for="Email">Email</label>
+    <input placeholder="Digite seu Email" formControlName="username" required="">
+    <label for="Password">Password</label>
+    <input type="password" formControlName="password" required="">
+    <button (click)="submit()">Enviar</button>
+</form>
