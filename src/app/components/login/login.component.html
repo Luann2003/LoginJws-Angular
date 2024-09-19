@@ -1,7 +1,16 @@
-<form [formGroup]="loginForm">
-    <label for="Email">Email</label>
-    <input placeholder="Digite seu Email" formControlName="username" required="">
-    <label for="Password">Password</label>
-    <input type="password" formControlName="password" required="">
-    <button (click)="submit()">Enviar</button>
-</form>
+<div class="container">
+    <form [formGroup]="loginForm" class="login-form">
+        <div class="form-group">
+        <label for="username">Email</label>
+        <input id="username" placeholder="Digite seu Email" formControlName="username" required>
+        </div>
+        
+        <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" formControlName="password" required>
+        </div>
+        
+        <button type="submit" (click)="submit()">Enviar</button>
+    </form>
+</div>
+  
